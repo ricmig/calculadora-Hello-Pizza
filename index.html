@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hello Pizza</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo|Reenie+Beanie|Roboto:400,500,500i" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>Hello Pizza</h1>
+		<nav>
+
+		</nav>
+	</header>
+	<section >
+		<h2>Pedido</h2>
+		<form id="formPedidos" name="pedido" action="http://arquivo.devmedia.com.br/projeto/requisicao.php"
+			method="POST">
+			<table>
+				<thead>
+					<tr>
+						<th>Sabor</th>
+						<th>Quantidade</th>
+						<th>Preço por uni.</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="item">
+						<td>Calabresa</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="calabresa">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td><span>R$ </span><input class="precoPizzaValor preco-item input" type='number' min="10"></td>
+
+					</tr>
+					<tr class="item">
+						<td>Mozzarella</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="mozzarella">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td><span>R$ </span><input class="precoPizzaValor preco-item input" type='number' min="10"></td>
+					</tr>
+					<tr class="item">
+						<td>Pepperoni</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="pepperoni">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td><span>R$ </span><input class="precoPizzaValor preco-item input" type='number' min="10"></td>
+					</tr>
+					<tr class="item">
+						<td>Marguerita</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="marguerita">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td><span>R$ </span><input class="precoPizzaValor preco-item input" type='number' min="10"></td>
+					</tr>
+					<tr class="item">
+						<td>Portuguesa</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="portuguesa">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td><span>R$ </span><input class="precoPizzaValor preco-item input" type='number' min="10"></td>
+					</tr>
+					<tr class="item">
+						<td>Frango</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="alho">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td><span>R$ </span><input class="precoPizzaValor preco-item input" type='number' min="10"></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2">Total de Pizzas <br> (máximo de 9 pizzas por pedido)</td>
+						<td id="total">0</td>
+					</tr>
+					<tr>
+						<td colspan="2">Quantidade de pessoas</td>
+						<td><input class="input inputpi" type="number" min="1">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">Pedaços por pessoa</td>
+						<td id="pedacosPorPessoa">0 PEDAÇO(S) PARA CADA. 0 PEDAÇO(S) SOBRANDO.
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">Valor por pessoa</td>
+						<td id="valorPessoa">0</td>
+					</tr>
+					<tr id="fundoT">
+						<td colspan="2">Valor Total</td>
+						<td id="totalReal">0</td>
+					</tr>
+				</tfoot>
+			</table>
+	
+		</form>
+		<img src="img/sabores-pizzas.png" id="pizza-sabores" />
+
+	</section>
+	<footer>
+		<a href="#" id="logo-hellopizza">Hello Pizza</a>
+		<p>Todos os direitos reservados &copy; Ricardo Baroni</p>
+	</footer>
+	<script src="main.js"></script>
+</body>
+
+</html>
