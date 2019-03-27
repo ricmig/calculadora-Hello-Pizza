@@ -12,15 +12,13 @@
 
 <body>
 	<header>
-		<h1>Hello Pizza</h1>
-		<nav>
+		<img src="img/logo-helloPizza.png" width='304px' height="70px">
 
-		</nav>
 	</header>
-	<section >
-		<h2>Pedido</h2>
-		<form id="formPedidos" name="pedido" action="http://arquivo.devmedia.com.br/projeto/requisicao.php"
-			method="POST">
+	<!-- <section > -->
+	<div class="bodyT">
+		<h2 id="head2">Pedido</h2>
+		<form id="formPedidos">
 			<table>
 				<thead>
 					<tr>
@@ -32,7 +30,7 @@
 				<tbody>
 					<tr class="item">
 						<td>Calabresa</td>
-						<td>
+						<td class="b-meio">
 							<a class="btn-decrementa">-</a>
 							<input max="9" class="quantidade" value="0" type="number" name="calabresa">
 							<a class="btn-incrementa">+</a>
@@ -42,7 +40,7 @@
 					</tr>
 					<tr class="item">
 						<td>Mozzarella</td>
-						<td>
+						<td class="b-meio">
 							<a class="btn-decrementa">-</a>
 							<input max="9" class="quantidade" value="0" type="number" name="mozzarella">
 							<a class="btn-incrementa">+</a>
@@ -51,7 +49,7 @@
 					</tr>
 					<tr class="item">
 						<td>Pepperoni</td>
-						<td>
+						<td class="b-meio">
 							<a class="btn-decrementa">-</a>
 							<input max="9" class="quantidade" value="0" type="number" name="pepperoni">
 							<a class="btn-incrementa">+</a>
@@ -60,7 +58,7 @@
 					</tr>
 					<tr class="item">
 						<td>Marguerita</td>
-						<td>
+						<td class="b-meio">
 							<a class="btn-decrementa">-</a>
 							<input max="9" class="quantidade" value="0" type="number" name="marguerita">
 							<a class="btn-incrementa">+</a>
@@ -69,7 +67,7 @@
 					</tr>
 					<tr class="item">
 						<td>Portuguesa</td>
-						<td>
+						<td class="b-meio">
 							<a class="btn-decrementa">-</a>
 							<input max="9" class="quantidade" value="0" type="number" name="portuguesa">
 							<a class="btn-incrementa">+</a>
@@ -78,7 +76,7 @@
 					</tr>
 					<tr class="item">
 						<td>Frango</td>
-						<td>
+						<td class="b-meio">
 							<a class="btn-decrementa">-</a>
 							<input max="9" class="quantidade" value="0" type="number" name="alho">
 							<a class="btn-incrementa">+</a>
@@ -114,8 +112,9 @@
 	
 		</form>
 		<img src="img/sabores-pizzas.png" id="pizza-sabores" />
-
-	</section>
+	
+	</div>
+	<!-- </section> -->
 	<footer>
 		<a href="#" id="logo-hellopizza">Hello Pizza</a>
 		<p>Todos os direitos reservados &copy; Ricardo Baroni</p>

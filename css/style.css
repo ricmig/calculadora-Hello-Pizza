@@ -8,7 +8,14 @@ body {
 	background-color: #131313;
 	background-image: url("../img/background-pizza.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;	
+}
+
+.bodyT{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 header {
@@ -18,7 +25,7 @@ header {
 	width:100vw;
 }
 
-h1, footer a {
+footer a {
 	height: 70px;
 	width: 304px;
 	overflow: hidden;
@@ -40,17 +47,7 @@ h2 {
 	margin:auto;
 }
 
-section {
-	clear: both;
-	padding: 30px 72px;
-	position: relative;
-	margin:0 0 50px 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
-}
+
 
 img#pizza-sabores {
 margin:auto;
@@ -58,30 +55,6 @@ width:350px;
 
 }
 
-nav {
-	float: right;
-	margin-top: -30px;
-}
-
-nav ul {
-	list-style: none;
-	display: block;
-}
-
-nav ul li {
-	float: left;
-	margin:0 50px;
-}
-
-nav ul li a {
-	color:#fff;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-family: 'Roboto', sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	letter-spacing: 1px
-}
 
 ul#vantagens {
     list-style: none;
@@ -181,8 +154,6 @@ footer {
     height: 100px;
     background-color: #2a2a2a;
     position: relative;
-	padding: 35px 0 10px 0;
-	width:100vw;
 }
 
 footer a {
@@ -238,10 +209,6 @@ input.quantidade {
 	margin: 0 15px;
 }
 
-form td:nth-child(2){
-	min-width: 123px;
-}
-
 .input{
     border: 1px dotted;
     width: 37px;
@@ -249,3 +216,47 @@ form td:nth-child(2){
     margin: auto;
 }
 
+@media (max-width: 600px){
+	header{
+		padding:0px;
+		display:flex;
+		justify-content: center;
+		align-items: center
+	}
+
+	header img {
+		position: relative;
+		right: 15px;
+	}
+	
+	section {
+		padding:0px;
+		margin:0px;
+	}
+
+	form{
+		width:100vw;
+		min-width:350px;
+	}
+	
+img#pizza-sabores {
+	margin:auto;
+	display:none;
+	}
+
+	.b-meio{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: auto;
+	}
+
+	th, td{
+		width:0px;
+	}
+
+	input.quantidade{
+		margin-left:0px;
+	}
+}
